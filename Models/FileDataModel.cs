@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Sockets;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Rattrapage_Programmation_Système.Models
 {
-    internal class SocketModel
+    internal class FileDataModel
     {
+        public string FileName { get; set; }
+        public byte[] Content { get; set; }
     }
 }

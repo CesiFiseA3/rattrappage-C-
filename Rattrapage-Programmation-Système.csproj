@@ -64,6 +64,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Client.cs" />
+    <Compile Include="Models\FileDataModel.cs" />
     <Compile Include="Models\MessageDataModel.cs" />
     <Compile Include="Models\SocketModel.cs" />
     <Compile Include="Server.cs" />

@@ -1,12 +1,57 @@
-﻿<Window x:Class="Rattrapage_Programmation_Système.MainWindow"
+﻿<Window x:Class="rattrappage-C-.View.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Rattrapage_Programmation_Système"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns:local="clr-namespace:rattrappage-C-.Ressources"
+        xmlns:vm="clr-namespace:rattrappage-C-.Ressources"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Chat App" Height="563" Width="1002" Background="#FFDAAB3A"
+        MinWidth="950" MinHeight="620"
+        Closing="Window_Closing">
+
+    <Grid Margin="2,34,0,22">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="223"/>
+            <ColumnDefinition Width="218"/>
+            <ColumnDefinition Width="240"/>
+            <ColumnDefinition Width="91"/>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58.671"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Background="#FFDAAB3A" Grid.ColumnSpan="6">
+            <TextBlock x:Name="welcomeTextBlock"  HorizontalAlignment="Left" Height="44" Width="690" FontWeight="Bold" FontSize="24"><Run Text="Bienvenue sur CHAT FOR ALL votre application de chat "/><Run Text="!"/></TextBlock>
+        </StackPanel>
+
+        <Grid Grid.Row="1" Background="#FF5C5C5C" Grid.ColumnSpan="6">
+            <TextBox x:Name="MessageTextBox" Margin="10,10,10,111"/>
+            <TextBox x:Name="MessageTextBox_Copy" Margin="10,368,10,58"/>
+
+        </Grid>
+
+        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Right" Background="#FFDAAB3A" Margin="0,-30,3,0" Width="236" Grid.ColumnSpan="2">
+        </StackPanel>
+
+        <UniformGrid x:Name="buttonsUniformGrid" Grid.Row="1" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="220,0,0,22" Grid.ColumnSpan="4" Height="30" Width="552">
+            <Button x:Name="SendMessageButton" Content="Envoyer Message" Width="150" Height="30" Click="SendMessageButton_Click" Margin="0,0,-12,0"/>
+            <TextBox x:Name="FileTextBox" Height="30" Margin="474,0,-338,0" RenderTransformOrigin="0.5,0.5">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+            <Button x:Name="BrowseFileButton" Content="Parcourir" Height="30" Click="BrowseFileButton_Click" Margin="0,0,47,0"/>
+        </UniformGrid>
+        <Button x:Name="SendMessageWithFileButton_Copy" Content="Envoyer Message avec Fichier" Click="SendMessageWithFileButton_Click" Margin="4,422,0,22" Grid.Column="4" Grid.Row="1"/>
     </Grid>
 </Window>
