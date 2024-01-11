@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Rattrapage_Programmation_Système
+namespace Rattrapage_Programmation_Système.Views
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
@@ -23,6 +24,26 @@ namespace Rattrapage_Programmation_Système
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void SendMessageWithFileButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BrowseFileButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SendMessageButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }

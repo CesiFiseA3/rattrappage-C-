@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Rattrapage_Programmation_Système.App</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -67,6 +70,8 @@
     <Compile Include="Models\FileDataModel.cs" />
     <Compile Include="Models\MessageDataModel.cs" />
     <Compile Include="Models\SocketModel.cs" />
+    <Compile Include="Ressources\LocalizedStrings.cs" />
+    <Compile Include="Ressources\LanguageManager.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
