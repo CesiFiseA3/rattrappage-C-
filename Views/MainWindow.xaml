@@ -32,26 +32,16 @@
         <Grid Grid.Row="1" Background="#FF5C5C5C" Grid.ColumnSpan="6">
             <TextBox x:Name="MessageTextBox" Margin="10,10,10,111"/>
             <TextBox x:Name="MessageTextBox_Copy" Margin="10,368,10,58"/>
+            <Label x:Name="AttachedFilesLabel" Content="Fichier(s) sélectionné(s) :" HorizontalAlignment="Left" Margin="10,440,0,0" VerticalAlignment="Top"/>
 
         </Grid>
 
         <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Right" Background="#FFDAAB3A" Margin="0,-30,3,0" Width="236" Grid.ColumnSpan="2">
         </StackPanel>
 
-        <UniformGrid x:Name="buttonsUniformGrid" Grid.Row="1" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="220,0,0,22" Grid.ColumnSpan="4" Height="30" Width="552">
-            <Button x:Name="SendMessageButton" Content="Envoyer Message" Width="150" Height="30" Click="SendMessageButton_Click" Margin="0,0,-12,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="FileTextBox" Height="30" Margin="474,0,-338,0" RenderTransformOrigin="0.5,0.5">
-                <TextBox.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform ScaleX="1"/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </TextBox.RenderTransform>
-            </TextBox>
-            <Button x:Name="BrowseFileButton" Content="Parcourir" Height="30" Click="BrowseFileButton_Click" Margin="0,0,47,0"/>
-        </UniformGrid>
-        <Button x:Name="SendMessageWithFileButton_Copy" Content="Envoyer Message avec Fichier" Click="SendMessageWithFileButton_Click" Margin="4,422,0,22" Grid.Column="4" Grid.Row="1"/>
+        <Button x:Name="BrowseFileButton" Content="Parcourir" Width="150" Height="30" Click="BrowseFileButton_Click" Margin="189,437,93,22" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+        <Button x:Name="SendMessageButton" Content="Envoyer" Width="150" Height="30" Click="SendMessageButton_Click" Margin="34,437,34,0" VerticalAlignment="Top" Grid.Column="4" Grid.Row="1"/>
+
     </Grid>
 </Window>

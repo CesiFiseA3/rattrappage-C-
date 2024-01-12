@@ -10,24 +10,25 @@ using System.Threading.Tasks;
 
 namespace Rattrapage_Programmation_Système.ViewModels
 {
-    internal class MainWindowViewModel
+    public class MainWindowViewModel
     {
         public List<MessageDataModel> messages { get; } = new List<MessageDataModel>();
         public string currentMessageContent { get; set; }
+        public FileDataModel currentAttachedFile { get; set; }
         public MainWindowViewModel() {}
-        private void SendMessage()
+        public void SendMessage()
         {
             // Logique pour envoyer un message
             var newMessage = new MessageDataModel
             {
                 id = messages.Count,
-                content = currentMessageContent
+                content = currentMessageContent,
+                attachedFiles = { currentAttachedFile }
             };
-
             messages.Add(newMessage);
             currentMessageContent = string.Empty; // Effacer le champ de texte après l'envoi du message
         }
-        private void AttachFile()
+        public void AttachFile()
         {
             // Logique pour joindre un fichier
             var openFileDialog = new OpenFileDialog
@@ -42,18 +43,11 @@ namespace Rattrapage_Programmation_Système.ViewModels
                 byte[] fileContent = File.ReadAllBytes(openFileDialog.FileName);
 
                 // Créer un objet FileDataModel pour représenter le fichier joint
-                var attachedFile = new FileDataModel
+                currentAttachedFile = new FileDataModel
                 {
                     FileName = Path.GetFileName(openFileDialog.FileName),
                     Content = fileContent
                 };
-
-                // Ajouter le fichier joint à la liste des fichiers joints du message actuel
-                var currentMessage = messages.LastOrDefault();
-                if (currentMessage != null)
-                {
-                    currentMessage.attachedFiles.Add(attachedFile);
-                }
             }
         }
     }

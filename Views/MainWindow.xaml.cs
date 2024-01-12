@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rattrapage_Programmation_Système.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -21,24 +22,21 @@ namespace Rattrapage_Programmation_Système.Views
     /// </summary>
     public partial class MainWindow : Window
     {
+        public readonly MainWindowViewModel viewModel = new MainWindowViewModel();
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void SendMessageWithFileButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void BrowseFileButton_Click(object sender, RoutedEventArgs e)
         {
-
+            viewModel.AttachFile();
+            AttachedFilesLabel.Content = "Fichier(s) sélectionné(s) : " + viewModel.currentAttachedFile.FileName;
         }
 
         private void SendMessageButton_Click(object sender, RoutedEventArgs e)
         {
-
+            viewModel.SendMessage();
         }
 
         private void Window_Closing(object sender, CancelEventArgs e)

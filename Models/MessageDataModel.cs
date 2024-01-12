@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Rattrapage_Programmation_Système.Models
 {
-    internal class MessageDataModel
+    public class MessageDataModel
     {
         public int id { get; set; }
         public string content { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rattrapage_Programmation_Système.Models
 {
-    internal class FileDataModel
+    public class FileDataModel
     {
         public string FileName { get; set; }
         public byte[] Content { get; set; }
