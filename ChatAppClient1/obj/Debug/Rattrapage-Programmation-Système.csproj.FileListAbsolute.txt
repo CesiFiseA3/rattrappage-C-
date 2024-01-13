@@ -1,0 +1,16 @@
+C:\repositories\rattrappage-C--jules\bin\Debug\Rattrapage-Programmation-Système.exe.config
+C:\repositories\rattrappage-C--jules\bin\Debug\Rattrapage-Programmation-Système.exe
+C:\repositories\rattrappage-C--jules\bin\Debug\Rattrapage-Programmation-Système.pdb
+C:\repositories\rattrappage-C--jules\obj\Debug\Rattrapage-Programmation-Système.csproj.AssemblyReference.cache
+C:\repositories\rattrappage-C--jules\obj\Debug\Views\MainWindow.g.cs
+C:\repositories\rattrappage-C--jules\obj\Debug\App.g.cs
+C:\repositories\rattrappage-C--jules\obj\Debug\Rattrapage-Programmation-Système_MarkupCompile.cache
+C:\repositories\rattrappage-C--jules\obj\Debug\Rattrapage-Programmation-Système_MarkupCompile.lref
+C:\repositories\rattrappage-C--jules\obj\Debug\Views\MainWindow.baml
+C:\repositories\rattrappage-C--jules\obj\Debug\Rattrapage-Programmation-Système.g.resources
+C:\repositories\rattrappage-C--jules\obj\Debug\Rattrapage_Programmation_Système.Properties.Resources.resources
+C:\repositories\rattrappage-C--jules\obj\Debug\Rattrapage-Programmation-Système.csproj.GenerateResource.cache
+C:\repositories\rattrappage-C--jules\obj\Debug\Rattrapage-Programmation-Système.csproj.CoreCompileInputs.cache
+C:\repositories\rattrappage-C--jules\obj\Debug\Rattrapage-Programmation-Système.exe
+C:\repositories\rattrappage-C--jules\obj\Debug\Rattrapage-Programmation-Système.pdb
+C:\repositories\rattrappage-C--jules\obj\Debug\GeneratedInternalTypeHelper.g.cs
