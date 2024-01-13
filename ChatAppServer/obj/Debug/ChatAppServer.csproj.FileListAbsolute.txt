@@ -1,0 +1,15 @@
+C:\repositories\ChatAppServer\obj\Debug\ChatAppServer.csproj.AssemblyReference.cache
+C:\repositories\ChatAppServer\obj\Debug\App.g.cs
+C:\repositories\ChatAppServer\obj\Debug\ChatAppServer_MarkupCompile.cache
+C:\repositories\ChatAppServer\obj\Debug\ChatAppServer_MarkupCompile.lref
+C:\repositories\ChatAppServer\bin\Debug\ChatAppServer.exe.config
+C:\repositories\ChatAppServer\bin\Debug\ChatAppServer.exe
+C:\repositories\ChatAppServer\bin\Debug\ChatAppServer.pdb
+C:\repositories\ChatAppServer\obj\Debug\View\MainWindow.g.cs
+C:\repositories\ChatAppServer\obj\Debug\View\MainWindow.baml
+C:\repositories\ChatAppServer\obj\Debug\ChatAppServer.g.resources
+C:\repositories\ChatAppServer\obj\Debug\ChatAppServer.Properties.Resources.resources
+C:\repositories\ChatAppServer\obj\Debug\ChatAppServer.csproj.GenerateResource.cache
+C:\repositories\ChatAppServer\obj\Debug\ChatAppServer.csproj.CoreCompileInputs.cache
+C:\repositories\ChatAppServer\obj\Debug\ChatAppServer.exe
+C:\repositories\ChatAppServer\obj\Debug\ChatAppServer.pdb
